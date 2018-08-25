@@ -83,6 +83,9 @@ button{
   line-height: 3em;
   background: #efefef;
 }
+#learning-area h3{
+  margin-left: 1em;
+}
 #container{
   list-style-type: none;
 }
@@ -92,6 +95,7 @@ button{
 }
 #item ul{
   margin-right: 14em;
+  color: grey;
 }
 /*Rules_Area*/
 #rules-area{
