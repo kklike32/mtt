@@ -1,0 +1,134 @@
+/*Global_Styles*/
+.center{
+  text-align: center;
+}
+button{
+  background: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+/*Title_Area*/
+#title-area{
+  padding-left: 20em;
+  padding-top: 10em;
+}
+#title-area h6{
+  color: grey;
+}
+/*Description_Area*/
+#description-area{
+  padding: 15em;
+  padding-top: 15em;
+  line-height: 3em;
+}
+#description-area p{
+  color: grey;
+}
+/*General_Info*/
+#general-info h3{
+  margin-left: 1em;
+}
+#general-info{
+  padding: 10em;
+  padding-top: 8em;
+  padding-bottom: 33em;
+  margin-top: 0em;
+  line-height: 3em;
+  background: #efefef;
+  margin-bottom: 2em;
+}
+#general-info ul{
+  list-style-type: none;
+}
+#general-info li{
+  display: block;
+  float: left;
+}
+#general-info p{
+  color: grey;
+  max-width: 40em;
+  margin-right: 5em;
+}
+/*Purpose_Info*/
+#purpose-area{
+  padding: 10em;
+  padding-top: 8em;
+  margin-top: 0em;
+  line-height: 3em;
+}
+#purpose-area h3{
+  margin-left: 22em;
+}
+#purpose-area ul{
+  list-style-type: none;
+}
+#purpose-area li{
+  display: block;
+  float: left;
+}
+#purpose-area p{
+  color: grey;
+  max-width: 40em;
+  margin-right: 5em;
+  margin-left: 6em;
+}
+/*Learning_Area*/
+#learning-area{
+  padding: 15em;
+  padding-top: 8em;
+  padding-bottom: 30em;
+  margin-top: 25em;
+  line-height: 3em;
+  background: #efefef;
+}
+#container{
+  list-style-type: none;
+}
+#item{
+  display: block;
+  float: left;
+}
+#item ul{
+  margin-right: 14em;
+}
+/*Rules_Area*/
+#rules-area{
+  margin: 10em;
+  margin-right: 0em;
+  line-height: 3em;
+}
+#rules-area h3{
+  margin-left: 23em;
+}
+#rules-area ul{
+  color: grey;
+}
+#rules{
+  margin-left: 7em;
+  max-width: 40em;
+}
+/*Registration*/
+#register{
+  padding-left: 15em;
+  padding-bottom: 20em;
+  padding-top: 30em;
+}
+#register p{
+  padding-top: 2em;
+}
+/*Contact_Area*/
+#contact-area{
+  text-align: center;
+  background: #efefef;
+  padding: 5em;
+}
+#contact-area p{
+  padding-top: 2em;
+}
+/*Background*/
+#background{
+  opacity: 0.2;
+  position: absolute;
+}
