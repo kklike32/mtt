@@ -1,138 +1,244 @@
-/*Global_Styles*/
-.center{
-  text-align: center;
-}
-button{
-  background: none;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
+@media (max-width: 500px) {
 /*Title_Area*/
 #title-area{
-  padding-left: 20em;
-  padding-top: 10em;
+  padding: 2em;
 }
 #title-area h6{
-  color: grey;
+  color: #666666;
 }
 /*Description_Area*/
 #description-area{
-  padding: 15em;
-  padding-top: 15em;
-  line-height: 3em;
+  padding: 2em;
 }
 #description-area p{
-  color: grey;
+  color: #666666;
+  line-height: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 /*General_Info*/
-#general-info h3{
-  margin-left: 1em;
-}
 #general-info{
-  padding: 10em;
-  padding-top: 8em;
-  padding-bottom: 33em;
-  margin-top: 0em;
-  line-height: 3em;
+  padding: 2em;
   background: #efefef;
-  margin-bottom: 2em;
 }
 #general-info ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 #general-info li{
   display: block;
-  float: left;
 }
 #general-info p{
-  color: grey;
-  max-width: 40em;
-  margin-right: 5em;
+  color: #666666;
+  line-height: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 /*Purpose_Info*/
 #purpose-area{
-  padding: 10em;
-  padding-top: 8em;
-  margin-top: 0em;
-  line-height: 3em;
-}
-#purpose-area h3{
-  margin-left: 22em;
+  padding: 2em;
+  padding-top: 1em;
 }
 #purpose-area ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 #purpose-area li{
   display: block;
-  float: left;
 }
 #purpose-area p{
-  color: grey;
-  max-width: 40em;
-  margin-right: 5em;
-  margin-left: 6em;
+  color: #666666;
+  line-height: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#purpose-area h3{
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 /*Learning_Area*/
 #learning-area{
-  padding: 15em;
-  padding-top: 8em;
-  padding-bottom: 30em;
-  margin-top: 25em;
-  line-height: 3em;
+  padding: 2em;
   background: #efefef;
 }
-#learning-area h3{
-  margin-left: 1em;
+#learning-area ul{
+  padding: 1em;
 }
 #container{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 #item{
   display: block;
-  float: left;
 }
 #item ul{
-  margin-right: 14em;
-  color: grey;
+  color: #666666;
+  line-height: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 /*Rules_Area*/
 #rules-area{
-  margin: 10em;
-  margin-right: 0em;
-  line-height: 3em;
-}
-#rules-area h3{
-  margin-left: 23em;
+  padding: 2em;
 }
 #rules-area ul{
   color: grey;
-}
-#rules{
-  margin-left: 7em;
-  max-width: 40em;
+  padding: 1em;
 }
 /*Registration*/
 #register{
-  padding-left: 15em;
-  padding-bottom: 20em;
-  padding-top: 30em;
-}
-#register p{
-  padding-top: 2em;
+  padding: 2em;
 }
 /*Contact_Area*/
 #contact-area{
   text-align: center;
   background: #efefef;
-  padding: 5em;
+  padding: 2em;
 }
-#contact-area p{
-  padding-top: 2em;
+/*Images*/
+#img{
+  max-width: 100%;
 }
 /*Background*/
 #background{
-  opacity: 0.2;
-  position: absolute;
+  opacity: 0.1;
+  position: fixed;
+  max-height: 100%;
+  width: auto;
+}
+}
+@media (min-width: 500px) {
+    #img{
+      max-width: 100%;
+    }
+    /*Background*/
+    #background{
+      opacity: 0.1;
+      position: absolute;
+      max-height: 100%;
+      width: 100%;
+    }
+    /*Title_Area*/
+    #title-area{
+      padding-left: 20%;
+      padding-top: 10%;
+    }
+    #title-area h6{
+      color: grey;
+    }
+    /*Description_Area*/
+    #description-area{
+      padding: 15%;
+      padding-bottom: 10.9%;
+      line-height: 3em;
+    }
+    #description-area p{
+      color: grey;
+    }
+    /*General_Info*/
+    #general-info{
+      padding: 5%;
+      padding-top: 8%;
+      padding-bottom: 33%;
+      line-height: 3em;
+      background: #efefef;
+    }
+    #general-info ul{
+      list-style-type: none;
+    }
+    #general-info li{
+      display: block;
+      float: left;
+    }
+    #general-info p{
+      color: grey;
+      width: 40em;
+    }
+    #general-info img{
+      padding-left: 20%;
+      max-width: 100%;
+    }
+    /*Purpose_Info*/
+    #purpose-area{
+      padding: 10%;
+      line-height: 3em;
+      padding-bottom: 30%;
+    }
+    #purpose-area h3{
+      margin-left: 45%;
+    }
+    #purpose-area ul{
+      list-style-type: none;
+    }
+    #purpose-area li{
+      display: block;
+      float: left;
+    }
+    #purpose-area p{
+      color: grey;
+      max-width: 40em;
+    }
+    #purpose-area img{
+      max-width: 100%;
+      padding-right: 20%;
+    }
+    /*Learning_Area*/
+    #learning-area{
+      padding: 10%;
+      padding-top: 5%;
+      padding-bottom: 32%;
+      line-height: 3em;
+      background: #efefef;
+    }
+    #learning-area img{
+      margin-left: 30%;
+    }
+    #container{
+      list-style-type: none;
+    }
+    #item{
+      display: block;
+      float: left;
+    }
+    #item ul{
+      margin-right: 14%;
+      color: grey;
+    }
+    /*Rules_Area*/
+    #rules-area{
+      margin: 10%;
+      margin-right: 0%;
+      line-height: 3em;
+    }
+    #rules-area h3{
+      margin-left: 48%;
+    }
+    #rules-area ul{
+      color: grey;
+    }
+    #rules{
+      margin-left: 20%;
+      max-width: 40em;
+    }
+    /*Registration*/
+    #register{
+      padding-left: 15%;
+      padding-bottom: 10%;
+      padding-top: 25%;
+    }
+    #register p{
+      padding-top: 2%;
+    }
+    /*Contact_Area*/
+    #contact-area{
+      text-align: center;
+      background: #efefef;
+      padding: 5%;
+    }
+    #contact-area p{
+      padding-top: 2%;
+    }
 }
