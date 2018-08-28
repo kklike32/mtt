@@ -34,19 +34,19 @@ div {
 </style>
 <body>
 
-<h3>Using CSS to style an HTML Form</h3>
+<h3>This is a work in progress</h3>
 
 <div>
 <p><span id="mins">00</span>:<span id="secs">00</span></p>
 <h3 onload="stopwatch()">Solve:</h3>
 	<h5>3x<sup>2</sup>+17x+9=0</h5>
-    <span id="totalWidth"><input type="radio" id="choice1"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
-    <span id="totalWidth"><input type="radio" id="choice2"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
-    <span id="totalWidth"><input type="radio" id="choice3"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
-    <span id="totalWidth"><input type="radio" id="choice4"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span>
+    <div><span id="totalWidth"><input type="radio" id="choice1"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice2"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">275</span></span><br><span id="space" onload="getCenter()">3</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice3"><span style="text-decoration: underline">-4 &plusmn; &radic;<span style="text-decoration:overline">20</span></span><br><span id="space" onload="getCenter()">3</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice4"><span style="text-decoration: underline">-4 &plusmn; &radic;<span style="text-decoration:overline">2751</span></span><br><span id="space" onload="getCenter()">3</span></span>
     
-    <button onclick="checkAnswer()">Check</button>
-    <p>response</p>
+    <button onclick="checkAnswer()" id="check">Check</button>
+    <p id="response"></p>
 </div>
 <script>
 function checkAnswer(){
@@ -55,14 +55,36 @@ function checkAnswer(){
     var Check3 = document.getElementById("choice3").checked;
     var Check4 = document.getElementById("choice4").checked;
     var x = document.getElementById('response');
+    var min = document.getElementById('mins');
+    var sec = document.getElementById('secs');
     if(Check1 == true){
-    
+    	x.innerHTML = "Correct! Your time is: " + min+":"+sec;
+    }else{
+    	x.innerHTML = "Incorrect! If you joined the MTT, you would know how to solve an equation like this.";
     }
 }
 function stopwatch(){
-	var mins = document.getElementById('mins').innerHTML;
-    var secs = document.getElementById('secs').innerHTML;
-    
+	var min1, min2, secRegroup, secellapsed, minellapsed;
+    var time = document.getElementById('time');
+    var min = document.getElementById('mins');
+    var sec = document.getElementById('secs');
+	var button = document.getElementById('check');
+    var d = new Date();
+    var min1 = d.getMinutes();
+    var sec1 = d.getSeconds();
+    button.onclick = function(){
+    	var min2 = d.getMinutes();
+        var sec2 = d.getSeconds();
+        if(sec1 > sec2){
+        	var min2 = min2 -1;
+            var secRegroup = sec2 + 60;
+            var secellapsed = secRegroup - sec1;
+            var minellapsed = min2 - min1;
+            min.innerHTML = minellapsed;
+            sec.innerHTML = secellapsed;
+            time.innerHTML = "Your time is: " + min + ":" + sec
+        }
+    }
 }
 </script>
 </body>
