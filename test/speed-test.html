@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Test yourself</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
-  </head>
-  <body>
-    <h1></h1>
-  </body>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+<p><span id="mins">00</span>:<span id="secs">00</span></p>
+<h3 onload="stopwatch()">Solve:</h3>
+	<h5>3x<sup>2</sup>+17x+9=0</h5>
+    <span id="totalWidth"><input type="radio" id="choice1"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice2"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice3"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span><br>
+    <span id="totalWidth"><input type="radio" id="choice4"><span style="text-decoration: underline">-17 &plusmn; &radic;<span style="text-decoration:overline">181</span></span><br><span id="space" onload="getCenter()">6</span></span>
+    
+    <button onclick="checkAnswer()">Check</button>
+    <p>response</p>
+</div>
+<script>
+function checkAnswer(){
+	var Check1 = document.getElementById("choice1").checked;
+    var Check2 = document.getElementById("choice2").checked;
+    var Check3 = document.getElementById("choice3").checked;
+    var Check4 = document.getElementById("choice4").checked;
+    var x = document.getElementById('response');
+    if(Check1 == true){
+    
+    }
+}
+function stopwatch(){
+	var mins = document.getElementById('mins').innerHTML;
+    var secs = document.getElementById('secs').innerHTML;
+    
+}
+</script>
+</body>
 </html>
